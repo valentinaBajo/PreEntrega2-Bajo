@@ -122,8 +122,6 @@ li {
     color: white;
 }
 
-/*AGREGADOS*/
-
 #body {
     display: grid;
     grid-template-areas: 
@@ -154,11 +152,9 @@ li {
     grid-area: main;
 }
 
-
 #footer {
     grid-area: footer;
 }
-
 
 /*FORMULARIO CONTACTOS*/
 .formulario{
@@ -187,11 +183,7 @@ li {
     font-size: 5px;
 }
 
-
-
 /* VIDEOS EN PAGINA CLIPS*/
-
-
 .clips__grid{
     display: grid;
     grid-template-columns: 30% 30% 30%;
@@ -200,7 +192,6 @@ li {
     justify-content: space-between;
     margin-top: 250px;
 }
-
 
 /* IMAGENES EN PAGINA PELICULAS*/
 .peliculas__grid{
@@ -213,9 +204,8 @@ li {
     ;
     align-items: center;
     justify-content: space-between;
-
-    
 }
+
 .peliculas__grid img{
     width: 100%;
     height: 100%;
@@ -249,11 +239,7 @@ li {
     flex-direction: column;
 }
 
-
-
-/*FIN*/
-
-
+/*RESPONSIVE*/
 @media screen and (max-width: 749px){
     #body {
         grid-template-areas: 
@@ -276,7 +262,6 @@ li {
     .inicio__contenidoVideo-iframe{
         width: 90vw;
     }
-
 
     .border {
         background-color: rgb(146, 0, 107);
