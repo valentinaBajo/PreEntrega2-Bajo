@@ -4,9 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="icons/logogato.png" type="image/x-icon">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--LIBRERÍA BTS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="style.css">
 
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +19,26 @@
     <body id="body">
         <!--HEADER/NAV-->
         <header id="header" class="border">
-            <nav id="navBar">
+
+            <nav class="navbar navbar-expand-lg" id="navBar">
+                <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <ul>
+                        <li><a href="#">INICIO</a></li>
+                        <li><a href="pages/peliculas.html">PELÍCULAS</a></li>
+                        <li><a href="pages/subgeneros.html">SUBGÉNEROS</a></li>
+                        <li><a href="pages/clips.html">CLIPS</a></li>
+                        <li><a href="pages/contacto.html">CONTACTO</a></li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+
+            
+            <!-- <nav id="navBar">
                 <ul>
                     <li><a href="#">INICIO</a></li>
                     <li><a href="pages/peliculas.html">PELÍCULAS</a></li>
@@ -24,7 +46,10 @@
                     <li><a href="pages/clips.html">CLIPS</a></li>
                     <li><a href="pages/contacto.html">CONTACTO</a></li>
                 </ul>
-            </nav>
+            </nav> -->
+
+
+
         </header>
 
         <main id="main" class="border">
@@ -77,3 +102,17 @@
         </footer>
     </body>
 </html>
+
+<!--
+<nav id="navBar">
+    <ul>
+        <li><a href="#">INICIO</a></li>
+        <li><a href="pages/peliculas.html">PELÍCULAS</a></li>
+        <li><a href="pages/subgeneros.html">SUBGÉNEROS</a></li>
+        <li><a href="pages/clips.html">CLIPS</a></li>
+        <li><a href="pages/contacto.html">CONTACTO</a></li>
+    </ul>
+</nav>
+prueba NAVBAR VIEJA
+
+--> 

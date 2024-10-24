@@ -33,6 +33,11 @@ li {
     z-index: 10;
 }
 
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
 #navBar {
     padding: 0px 30px;
 }
@@ -75,6 +80,11 @@ li {
 }
 
 /*ESTILOS FOOTER*/
+
+.footer__links{
+    background-color: rgb(43, 2, 2);
+}
+
 #footer {
     display: flex;
     background-color: rgb(43, 2, 2);
@@ -93,6 +103,7 @@ li {
 
 /*FOOTER LINKS*/
 .footer__links-copyright {
+    background-color: rgb(43, 2, 2);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,7 +163,7 @@ li {
 /*FORMULARIO CONTACTOS*/
 .formulario{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     top: 10%;
     left: 30%;
@@ -161,8 +172,6 @@ li {
     background: rebeccapurple;
     border-radius: 10px;
 }
-
-
 
 .nombreForm{
     padding: 0 10px;
@@ -212,8 +221,15 @@ li {
     height: 100%;
 
 }
+
+.container-peli{
+    margin: 5px;
+    padding: 5px;
+}
+
 /*SUBGENEROS CONTENIDOS*/
 .subgeneros__contenido-h2{
+    padding: 30px;
     margin: 3px;
     text-align: left;
     font-size: 25px;
@@ -226,6 +242,7 @@ li {
 }
 
 .subgeneros__imagenSecu{
+    padding: 30px;
     display: flex;
     align-items: end; 
     width: 300px;
@@ -249,6 +266,17 @@ li {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 60px 40px 2fr 2fr 40px;
     }
+
+    .clips__grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .inicio__contenidoVideo-iframe{
+        width: 90vw;
+    }
+
 
     .border {
         background-color: rgb(146, 0, 107);
