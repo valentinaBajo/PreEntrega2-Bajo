@@ -89,7 +89,7 @@ li {
     display: flex;
     background-color: rgb(43, 2, 2);
     font-family: "Silkscreen", sans-serif;
-    flex-direction: row;
+    height: 150px;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
@@ -157,28 +157,38 @@ li {
 }
 
 /*FORMULARIO CONTACTOS*/
-.formulario{
+
+.form{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    top: 10%;
-    left: 30%;
+    gap: 1rem;
+    padding: 10px;
+}
+
+.formulario{
     transform: translate(-50%, -50%);
     width: 400px;
     background: rebeccapurple;
     border-radius: 10px;
 }
 
+.container-formulario{
+    display: flex;
+    padding-left: 300px;
+    align-items: center;
+}
+
 .nombreForm{
+    display: flex;
     padding: 0 10px;
     box-sizing: border-box;
+    justify-content: left;
 }
 .emailForm{
     padding: 0 10px;
     box-sizing: border-box;
 }
 .contacto__contenido{
-    margin-left: 500px;
     margin-bottom: 10px;
     font-size: 5px;
 }
