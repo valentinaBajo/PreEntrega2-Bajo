@@ -1,0 +1,129 @@
+/*ESTILOS CONTENIDO - IMÁGEN*/
+.main__banner-picture img {
+    width: 100vw;
+}
+    
+/*SECCIÓN INICIO 1 - TÍTULO*/
+.inicio__contenido-h1 {
+    margin: 30px;
+    text-align: left;
+    font-size: 40px;
+}
+    
+/*SECCIÓN INICIO 1 - PÁRRAFO*/
+.inicio__contenido-p {
+    margin-left: 10px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+/*SECCIÓN INICIO 1 - VIDEO*/
+.inicio__contenidoVideo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inicio__contenidoVideo-iframe {
+    width: 800px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+/*FORMULARIO CONTACTOS*/
+
+.inicio__contenido {
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px;
+}
+
+.formulario {
+    width: 400px;
+    background: rebeccapurple;
+    border-radius: 10px;
+}
+
+.container-formulario {
+    display: flex;
+    padding-left: 300px;
+    align-items: center;
+}
+
+.nombreForm {
+    display: flex;
+    padding: 0 10px;
+    box-sizing: border-box;
+    justify-content: left;
+}
+
+.emailForm {
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.contacto__contenido {
+    // margin-bottom: 10px;
+    font-size: 5px;
+}
+
+/* VIDEOS EN PAGINA CLIPS*/
+.clips__grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30% 30%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 250px;
+}
+
+/* IMAGENES EN PAGINA PELICULAS*/
+
+.peliculas__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+}
+
+.container-peli {
+    text-align: center; 
+}
+
+
+
+.peliculas__grid img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-peli {
+    margin: 5px;
+    padding: 5px;
+}
+
+/*SUBGENEROS CONTENIDOS*/
+.subgeneros__contenido-h2 {
+    padding: 30px;
+    margin: 3px;
+    text-align: left;
+    font-size: 25px;
+}
+
+.subgeneros__contenido-p {
+    margin: 1px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.subgeneros__imagenSecu {
+    padding: 30px;
+    display: flex;
+    align-items: end;
+    width: 300px;
+    flex-direction: column;
+}
