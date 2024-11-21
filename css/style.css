@@ -128,11 +128,18 @@ li {
 /* VIDEOS EN PAGINA CLIPS*/
 .clips__grid {
   display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 30% 30% 30%;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 250px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  max-width: 1980px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.clips__grid iframe {
+  width: 100%;
+  height: 315px;
+  max-width: 600px;
 }
 
 /* IMAGENES EN PAGINA PELICULAS*/
@@ -304,14 +311,14 @@ li {
     width: 10rem;
   }
 }
-@media screen and (min-width: 901px) and (max-width: 1400px) {
+@media screen and (min-width: 901px) and (max-width: 1980px) {
   #body {
     grid-template-areas: "header header header header header" "main    main  main   main  main" "main    main  main   main  main" "main    main  main   main  main" "footer footer footer footer footer";
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 120px 3fr 1fr 1fr 80px;
   }
   .border {
-    background-color: rgb(255, 0, 0);
+    background-color: white;
   }
   .container-peli img {
     height: 10rem;

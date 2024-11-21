@@ -61,14 +61,14 @@
         }
 
 }
-@media screen and (min-width: 901px) and (max-width: 1400px) {
+@media screen and (min-width: 901px) and (max-width: 1980px) {
     #body {
     grid-template-areas: "header header header header header" "main    main  main   main  main" "main    main  main   main  main" "main    main  main   main  main" "footer footer footer footer footer";
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 120px 3fr 1fr 1fr 80px;
     }
     .border {
-    background-color: rgb(255, 0, 0);
+    background-color: white;
     }
     .container-peli img {
         height: 10rem;
