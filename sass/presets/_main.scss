@@ -32,8 +32,48 @@
 
 /*FORMULARIO CONTACTOS*/
 
-.inicio__contenido {
+.container-contacto {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+.inicio__contenido-form {
     width: 100%;
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.container-formulario {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+}
+
+.formulario {
+    width: 100%;
+    max-width: 400px; 
+    background: rgb(172, 160, 160);
+    border-radius: 10px;
+    padding: 20px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    margin-left: 50px;
+}
+
+.contacto__contenido {
+    flex: 1; 
+    font-size: 14px; 
+    text-align: center; /* Alinea el texto al centro */
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end; 
+    padding: 20px;
+    margin-right: 200px;
+}
+
+.contacto__contenido p {
+    max-width: 800px; /* Ancho del texto */
 }
 
 .form {
@@ -41,35 +81,7 @@
     flex-direction: column;
     gap: 1rem;
     padding: 10px;
-}
 
-.formulario {
-    width: 400px;
-    background: rebeccapurple;
-    border-radius: 10px;
-}
-
-.container-formulario {
-    display: flex;
-    padding-left: 300px;
-    align-items: center;
-}
-
-.nombreForm {
-    display: flex;
-    padding: 0 10px;
-    box-sizing: border-box;
-    justify-content: left;
-}
-
-.emailForm {
-    padding: 0 10px;
-    box-sizing: border-box;
-}
-
-.contacto__contenido {
-    // margin-bottom: 10px;
-    font-size: 5px;
 }
 
 /* VIDEOS EN PAGINA CLIPS*/
@@ -79,7 +91,7 @@
     gap: 20px; 
     justify-content: center; 
     max-width: 1980px; 
-    margin: 0 auto; 
+    margin: 30px; 
     margin-top: 30px; 
 }
 
@@ -109,6 +121,11 @@
 }
 
 /*SUBGENEROS CONTENIDOS*/
+
+.subgeneros__contenido {
+    margin-left: 5px;
+}
+
 .subgeneros__contenido-h2 {
     padding: 30px;
     margin: 3px;
@@ -126,6 +143,8 @@
     padding: 30px;
     display: flex;
     align-items: end;
-    width: 300px;
     flex-direction: column;
+    width: 700px; 
+    margin-top: 100px;
+    margin-left: 50px;
 }

@@ -86,8 +86,48 @@ li {
 }
 
 /*FORMULARIO CONTACTOS*/
-.inicio__contenido {
+.container-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.inicio__contenido-form {
   width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container-formulario {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.formulario {
+  width: 100%;
+  max-width: 400px;
+  background: rgb(172, 160, 160);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 50px;
+}
+
+.contacto__contenido {
+  flex: 1;
+  font-size: 14px;
+  text-align: center; /* Alinea el texto al centro */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+  margin-right: 200px;
+}
+
+.contacto__contenido p {
+  max-width: 800px; /* Ancho del texto */
 }
 
 .form {
@@ -97,34 +137,6 @@ li {
   padding: 10px;
 }
 
-.formulario {
-  width: 400px;
-  background: rebeccapurple;
-  border-radius: 10px;
-}
-
-.container-formulario {
-  display: flex;
-  padding-left: 300px;
-  align-items: center;
-}
-
-.nombreForm {
-  display: flex;
-  padding: 0 10px;
-  box-sizing: border-box;
-  justify-content: left;
-}
-
-.emailForm {
-  padding: 0 10px;
-  box-sizing: border-box;
-}
-
-.contacto__contenido {
-  font-size: 5px;
-}
-
 /* VIDEOS EN PAGINA CLIPS*/
 .clips__grid {
   display: grid;
@@ -132,7 +144,7 @@ li {
   gap: 20px;
   justify-content: center;
   max-width: 1980px;
-  margin: 0 auto;
+  margin: 30px;
   margin-top: 30px;
 }
 
@@ -162,6 +174,10 @@ li {
 }
 
 /*SUBGENEROS CONTENIDOS*/
+.subgeneros__contenido {
+  margin-left: 5px;
+}
+
 .subgeneros__contenido-h2 {
   padding: 30px;
   margin: 3px;
@@ -179,8 +195,10 @@ li {
   padding: 30px;
   display: flex;
   align-items: end;
-  width: 300px;
   flex-direction: column;
+  width: 700px;
+  margin-top: 100px;
+  margin-left: 50px;
 }
 
 /*ESTILOS FOOTER*/
@@ -255,6 +273,7 @@ li {
 }
 
 /*RESPONSIVE*/
+/* MOBILE */
 @media screen and (max-width: 749px) {
   #body {
     grid-template-areas: "header header" "nav     nav" "main   main" "main   main" "footer footer";
@@ -270,7 +289,7 @@ li {
     width: 90vw;
   }
   .border {
-    background-color: rgb(146, 0, 107);
+    background-color: white;
   }
   .peliculas__grid {
     grid-template-columns: 1fr;
@@ -296,6 +315,26 @@ li {
     height: 10rem;
     width: 10rem;
   }
+  .subgeneros__contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .subgeneros__contenido .col-8,
+  .subgeneros__contenido .col-4 {
+    width: 100%;
+  }
+  .subgeneros__contenido-p {
+    text-align: center;
+    margin: 0;
+  }
+  .subgeneros__imagenSecu {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 0 auto;
+  }
 }
 @media screen and (min-width: 750px) and (max-width: 900px) {
   #body {
@@ -304,13 +343,14 @@ li {
     grid-template-rows: 100px 1fr 1fr 60px;
   }
   .border {
-    background-color: rgb(102, 255, 0);
+    background-color: white;
   }
   .container-peli img {
     height: 10rem;
     width: 10rem;
   }
 }
+/* DESKTOP */
 @media screen and (min-width: 901px) and (max-width: 1980px) {
   #body {
     grid-template-areas: "header header header header header" "main    main  main   main  main" "main    main  main   main  main" "main    main  main   main  main" "footer footer footer footer footer";

@@ -1,4 +1,6 @@
 /*RESPONSIVE*/
+
+/* MOBILE */
 @media screen and (max-width: 749px) {
     #body {
     grid-template-areas: "header header" "nav     nav" "main   main" "main   main" "footer footer";
@@ -14,7 +16,7 @@
     width: 90vw;
     }
     .border {
-    background-color: rgb(146, 0, 107);
+    background-color: white;
     }
     .peliculas__grid {
         grid-template-columns: 1fr; 
@@ -45,7 +47,33 @@
         height: 10rem;
         width: 10rem;
         }
-}
+
+
+        .subgeneros__contenido {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            gap: 20px; 
+        }
+    
+        .subgeneros__contenido .col-8, 
+        .subgeneros__contenido .col-4 {
+            width: 100%; 
+        }
+    
+        .subgeneros__contenido-p {
+            text-align: center; 
+            margin: 0; 
+        }
+    
+        .subgeneros__imagenSecu {
+            width: 100%; 
+            max-width: 700px; 
+            height: auto; 
+            margin: 0 auto; 
+        }
+    }
+
 @media screen and (min-width: 750px) and (max-width: 900px) {
     #body {
     grid-template-areas: "header header header header" "main   main   main   main" "main   main   main   main" "footer footer footer footer";
@@ -53,14 +81,15 @@
     grid-template-rows: 100px 1fr 1fr 60px;
     }
     .border {
-    background-color: rgb(102, 255, 0);
+    background-color: white;
     }
     .container-peli img {
         height: 10rem;
         width: 10rem;
-        }
+        }  
+    }
 
-}
+    /* DESKTOP */
 @media screen and (min-width: 901px) and (max-width: 1980px) {
     #body {
     grid-template-areas: "header header header header header" "main    main  main   main  main" "main    main  main   main  main" "main    main  main   main  main" "footer footer footer footer footer";
@@ -83,5 +112,5 @@
         display: flex;
         justify-content: left;
     }
-}
+    }
 
